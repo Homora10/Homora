@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Homora — Find Your Dream Home in Mumbai</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Reset & base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #004d7a, #008793);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      opacity: 0.85;
+    }
+
+    /* Main Section */
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    main h2 {
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #004d7a;
+      text-align: center;
+    }
+
+    /* Listings grid */
+    .listings {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    /* Each listing card */
+    .listing {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .listing:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .listing img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .listing:hover img {
+      transform: scale(1.05);
+    }
+
+    .listing-info {
+      padding: 20px;
+    }
+
+    .listing-info h3 {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #004d7a;
+      font-size: 1.25rem;
+    }
+
+    .listing-info p {
+      color: #666;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    /* Call to Action Section */
+    .cta {
+      background: #008793;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      margin-top: 60px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,135,147,0.3);
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .cta p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      opacity: 0.9;
+    }
+
+    .cta a {
+      background: white;
+      color: #008793;
+      padding: 15px 40px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      transition: background 0.3s ease, color 0.3s ease;
+      display: inline-block;
+    }
+
+    .cta a:hover {
+      background: #004d7a;
+      color: white;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+
+    /* Footer */
+    footer {
+      background: #002f3d;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 80px;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    footer a {
+      color: #00d4ff;
+      margin: 0 12px;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #008793;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      main h2 {
+        font-size: 1.5rem;
+      }
+      .cta h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Homora</h1>
+    <p>Find your dream home in Mumbai — rent or buy, made easy.</p>
+  </header>
+
+  <main>
+    <h2>Featured Listings in Mumbai</h2>
+    <div class="listings">
+      <div class="listing" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1560185127-9ea3d68f6cde?auto=format&fit=crop&w=400&q=80" alt="Modern Family Home Mumbai" />
+        <div class="listing-info">
+          <h3>Modern Family Home</h3>
+          <p>3 bed · 2 bath · ₹45,000/mo · Andheri West</p>
+        </div>
+      </div>
+
+      <div class="listing" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1600585154624-4de1a6a3ff4a?auto=format&fit=crop&w=400&q=80" alt="Cozy Apartment Mumbai" />
+        <div class="listing-info">
+          <h3>Cozy Apartment</h3>
+          <p>2 bed · 1 bath · ₹30,000/mo · Bandra East</p>
+        </div>
+      </div>
+
+      <div class="listing" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1505692794403-04ac16a9b273?auto=format&fit=crop&w=400&q=80" alt="Luxury Villa Mumbai" />
+        <div class="listing-info">
+          <h3>Luxury Villa</h3>
+          <p>4 bed · 3 bath · ₹1,50,000/mo · Juhu</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="cta" aria-label="Call to action">
+      <h2>List Your Property on Homora</h2>
+      <p>Are you a landlord or agent in Mumbai? Share your property and reach more renters and buyers.</p>
+     <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3wH07By9kQhkGpKyLYrK5EF8YBZPf82vqpQBwZ8uUVGoQPg/viewform?usp=sharing&ouid=106494327344873216738" target="_blank" rel="noopener noreferrer" aria-label="Submit your property listing">Submit Your Listing (₹500 fee)</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Connect with us: 
+      <a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Instagram page">Instagram</a> | 
+      <a href="mailto:youremail@example.com" aria-label="Send email">Email Us</a>
+    </p>
+    <p>© 2025 Homora</p>
+  </footer>
+
+</body>
+</html>
+
